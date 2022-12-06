@@ -8,35 +8,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var loginPressed: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //URL Request
-        let parseEndpoint = parseAPI.Endpoint.mapInformation.url
+        let apiEndpoint =
+        mapAPI.Endpoint.studentLocationsFromAPi.url //converted to varibale, but can print url in debug pannel
         
-        let task = URLSession.shared.dataTask(with: parseEndpoint) { (data,
-            response, error) in
+        //Request
+        let task = URLSession.shared.dataTask(with: apiEndpoint) { data, response, error in
             guard let data = data else {
                 return
             }
-            print(data) //Json serialization will convert the returned bytes to data
+            //print(data) // data returns bytes of data from endpoint.
+            //print(String(data: data, encoding: .utf8)!)
             
+            let decoder = JSONDecoder()
             do {
-                let json = try
-                JSONSerialization.jsonObject(with: data, options: []) as!
-                    [String: Any]
-                let url = json["message"] as!
-                    String
-                print(url)
+                let response = try decoder.decode(Location.self, from: data)
             } catch {
-            print(error)
+                print(error)
             }
         }
         task.resume()
     }
 }
-        
-        
+    
