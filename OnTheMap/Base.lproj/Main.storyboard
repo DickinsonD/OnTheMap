@@ -300,57 +300,41 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="34q-79-j3v" kind="relationship" relationship="rootViewController" id="3Uh-gJ-ahT"/>
+                        <segue destination="8gq-pB-YDs" kind="relationship" relationship="rootViewController" id="x9H-JA-JWE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nG3-fi-lzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2560" y="507.58293838862556"/>
         </scene>
-        <!--Table View-->
-        <scene sceneID="XIB-hQ-CUz">
+        <!--Student Table View-->
+        <scene sceneID="wVL-JC-PYP">
             <objects>
-                <tableViewController id="34q-79-j3v" customClass="MapTableViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FWq-KM-EGp">
+                <tableViewController id="8gq-pB-YDs" customClass="StudentTableView" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BSv-zu-EF8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="85" id="o4v-ti-w4Y" customClass="MapCell" customModule="OnTheMap" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="85"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentTableViewCell" id="TXk-wi-imd" customClass="StudentTableViewCell" customModule="OnTheMap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o4v-ti-w4Y" id="Fl9-bV-1KX" customClass="MapCell" customModule="OnTheMap" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="85"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TXk-wi-imd" id="RlY-6s-FV0">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-Fc-UJL">
-                                            <rect key="frame" x="4" y="-1" width="93" height="86"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="34q-79-j3v" id="VjT-R6-gQw"/>
-                            <outlet property="delegate" destination="34q-79-j3v" id="DI9-Uk-NUG"/>
+                            <outlet property="dataSource" destination="8gq-pB-YDs" id="oQX-7B-wDY"/>
+                            <outlet property="delegate" destination="8gq-pB-YDs" id="Nke-WU-b1g"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Table View" id="ljY-Md-J6i">
-                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="WSb-E0-5rV"/>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="plus" catalog="system" id="bbw-bh-l3G">
-                                <connections>
-                                    <segue destination="RpO-hM-OT6" kind="presentation" id="HJb-3p-TgQ"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="M5E-09-ZSs"/>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="bfs-tD-oDQ"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfi-bZ-ksu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fep-o4-siH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3478.4615384615386" y="507.58293838862556"/>
+            <point key="canvasLocation" x="3448" y="519"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tMa-Bj-tc0">
@@ -371,9 +355,6 @@
             <point key="canvasLocation" x="4392" y="97"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HJb-3p-TgQ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Udacity" width="225" height="225"/>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>

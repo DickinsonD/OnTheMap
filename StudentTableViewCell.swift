@@ -1,13 +1,13 @@
 //
-//  MapCell.swift
+//  StudentTableViewCell.swift
 //  OnTheMap
 //
-//  Created by DANIEL DICKINSON on 12/1/22.
+//  Created by DANIEL DICKINSON on 12/8/22.
 //
 
 import UIKit
 
-class MapCell: UITableViewCell {
+class StudentTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

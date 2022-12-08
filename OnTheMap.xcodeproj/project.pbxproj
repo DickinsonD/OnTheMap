@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65867EB9294246120002191B /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65867EB8294246120002191B /* MapManager.swift */; };
+		65867EBB294246230002191B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65867EBA294246230002191B /* LocationModel.swift */; };
+		65867EC3294252AD0002191B /* StudentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65867EC2294252AD0002191B /* StudentTableView.swift */; };
+		65867EC5294252C10002191B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65867EC4294252C10002191B /* StudentTableViewCell.swift */; };
 		659075D929395895004C84B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075D829395895004C84B4 /* AppDelegate.swift */; };
 		659075DB29395895004C84B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075DA29395895004C84B4 /* SceneDelegate.swift */; };
 		659075DD29395895004C84B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075DC29395895004C84B4 /* ViewController.swift */; };
@@ -14,17 +18,14 @@
 		659075E229395897004C84B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659075E129395897004C84B4 /* Assets.xcassets */; };
 		659075E529395897004C84B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659075E329395897004C84B4 /* LaunchScreen.storyboard */; };
 		659075ED293958AA004C84B4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659075EC293958AA004C84B4 /* GradientView.swift */; };
-		65B1FB1F29397FB6007B32BC /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB1E29397FB6007B32BC /* MapCell.swift */; };
-		65B1FB2329398887007B32BC /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB2229398887007B32BC /* MapTableViewController.swift */; };
 		65B1FB2929398A53007B32BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB2829398A53007B32BC /* MapViewController.swift */; };
-		65B1FB2B2939A4A2007B32BC /* InfoPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB2A2939A4A2007B32BC /* InfoPostingViewController.swift */; };
-		65B1FB2E2939B17C007B32BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB2D2939B17C007B32BC /* API.swift */; };
-		65B1FB32293A7775007B32BC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB31293A7775007B32BC /* Location.swift */; };
-		65B1FB34293A79AD007B32BC /* StudentLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1FB33293A79AD007B32BC /* StudentLocations.swift */; };
-		65B36090293AF68B0017CD8A /* MapStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3608F293AF68B0017CD8A /* MapStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65867EB8294246120002191B /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		65867EBA294246230002191B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		65867EC2294252AD0002191B /* StudentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableView.swift; sourceTree = "<group>"; };
+		65867EC4294252C10002191B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		659075D529395895004C84B4 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659075D829395895004C84B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659075DA29395895004C84B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,14 +35,7 @@
 		659075E429395897004C84B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659075E629395897004C84B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659075EC293958AA004C84B4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		65B1FB1E29397FB6007B32BC /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
-		65B1FB2229398887007B32BC /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		65B1FB2829398A53007B32BC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		65B1FB2A2939A4A2007B32BC /* InfoPostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostingViewController.swift; sourceTree = "<group>"; };
-		65B1FB2D2939B17C007B32BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		65B1FB31293A7775007B32BC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		65B1FB33293A79AD007B32BC /* StudentLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocations.swift; sourceTree = "<group>"; };
-		65B3608F293AF68B0017CD8A /* MapStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +52,9 @@
 		659075CC29395895004C84B4 = {
 			isa = PBXGroup;
 			children = (
-				65B3608F293AF68B0017CD8A /* MapStruct.swift */,
-				65B1FB2A2939A4A2007B32BC /* InfoPostingViewController.swift */,
+				65867EC4294252C10002191B /* StudentTableViewCell.swift */,
+				65867EC2294252AD0002191B /* StudentTableView.swift */,
 				65B1FB2829398A53007B32BC /* MapViewController.swift */,
-				65B1FB2229398887007B32BC /* MapTableViewController.swift */,
-				65B1FB1E29397FB6007B32BC /* MapCell.swift */,
 				659075EC293958AA004C84B4 /* GradientView.swift */,
 				659075D729395895004C84B4 /* OnTheMap */,
 				659075D629395895004C84B4 /* Products */,
@@ -95,9 +87,8 @@
 		65B1FB2C2939B134007B32BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				65B1FB2D2939B17C007B32BC /* API.swift */,
-				65B1FB31293A7775007B32BC /* Location.swift */,
-				65B1FB33293A79AD007B32BC /* StudentLocations.swift */,
+				65867EB8294246120002191B /* MapManager.swift */,
+				65867EBA294246230002191B /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,16 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				659075DD29395895004C84B4 /* ViewController.swift in Sources */,
-				65B1FB2B2939A4A2007B32BC /* InfoPostingViewController.swift in Sources */,
-				65B1FB32293A7775007B32BC /* Location.swift in Sources */,
 				659075D929395895004C84B4 /* AppDelegate.swift in Sources */,
-				65B1FB34293A79AD007B32BC /* StudentLocations.swift in Sources */,
-				65B36090293AF68B0017CD8A /* MapStruct.swift in Sources */,
-				65B1FB2329398887007B32BC /* MapTableViewController.swift in Sources */,
-				65B1FB1F29397FB6007B32BC /* MapCell.swift in Sources */,
+				65867EBB294246230002191B /* LocationModel.swift in Sources */,
+				65867EC3294252AD0002191B /* StudentTableView.swift in Sources */,
+				65867EB9294246120002191B /* MapManager.swift in Sources */,
+				65867EC5294252C10002191B /* StudentTableViewCell.swift in Sources */,
 				659075ED293958AA004C84B4 /* GradientView.swift in Sources */,
 				659075DB29395895004C84B4 /* SceneDelegate.swift in Sources */,
-				65B1FB2E2939B17C007B32BC /* API.swift in Sources */,
 				65B1FB2929398A53007B32BC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
