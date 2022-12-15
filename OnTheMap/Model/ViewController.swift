@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-        
+    
     
     @IBAction func loginTapped(_ sender: Any) {
         UdacityAPI.getRequestToken(completion: handleRequestTokenResponse(success: error:))
@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     
     func handleRequestTokenResponse(success: Bool, error: Error?) {
         if success {
-            print(UdacityAPI.Auth.sessionId)
+            performSegue(withIdentifier: "login", sender: nil)
+            //print(UdacityAPI.Auth.sessionId)
+            
         }
     
     

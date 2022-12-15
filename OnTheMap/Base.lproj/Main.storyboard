@@ -88,10 +88,7 @@
                                                     <color key="baseBackgroundColor" red="0.85975387439544515" green="0.44024412454179468" blue="0.040987997771066459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7q-WA-nGC"/>
-                                                    <action selector="loginTapped:" destination="tmH-sU-qUw" eventType="touchUpInside" id="9gO-LZ-Nrd"/>
-                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmB-5b-ETO"/>
-                                                    <segue destination="hMO-gk-DKl" kind="show" id="zri-Ea-cSI"/>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfj-lB-wJw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -134,9 +131,11 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="Ufv-9S-aPD"/>
+                    <connections>
+                        <segue destination="hMO-gk-DKl" kind="presentation" identifier="login" id="6Ks-HX-KSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="tmH-sU-qUw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="949.23076923076917" y="97.393364928909946"/>
         </scene>
@@ -166,7 +165,6 @@
                     <tabBarItem key="tabBarItem" title="Item" image="mappin.and.ellipse" catalog="system" id="izx-xL-0ML"/>
                     <navigationItem key="navigationItem" id="hR3-Je-pKl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIA-ZR-AXz">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -219,7 +217,7 @@
             <objects>
                 <viewController storyboardIdentifier="InfoPostingView" id="uSc-fX-Aah" customClass="InfoPostingViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vXB-g3-fXR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fg4-MD-GtX">
@@ -298,7 +296,6 @@
                     <tabBarItem key="tabBarItem" title="Item" image="tablecells" catalog="system" id="wKP-a7-TU7"/>
                     <navigationItem key="navigationItem" id="e4n-xZ-STn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="35j-rD-Lc1">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -347,7 +344,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RpO-hM-OT6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uhy-Bi-kSA">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
